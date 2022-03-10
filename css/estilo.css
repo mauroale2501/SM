@@ -1,0 +1,499 @@
+a:hover {
+	color: cyan;
+} 
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+}
+#logoTop1 {
+	width: 80px;
+	hyphens: 100px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	padding-left: 200px;
+	justify-content: center;
+}
+.logoTop {
+	text-align: center;
+	width: 150px;
+	height: 500px;
+}
+.imgIndex {
+	max-width: 626px;
+	max-height: 900px;
+}
+.border {
+	border: 1px solid black;
+}
+.navIzq {
+	text-align: center;
+}
+.navDer {
+	text-align: center;
+}
+.navIzq li {
+	list-style-type: none;
+	display: inline;
+	font-family: sans-serif;
+	font-size: 30px;
+	padding: 20px;
+	padding-left: 20px; 
+	text-align: center;
+}
+.navDer li {
+	list-style-type: none;
+	font-family: sans-serif;
+	font-size: 30px;
+	padding: 20px;
+	padding-right: 20px;
+	display: inline;
+	text-align: center;
+}
+.mueblesizq {
+	display: flex;
+	flex-direction: column;
+	font-family: serif;
+	font-size: 35px;
+	justify-content: space-between;
+	width: 500px;
+	height: 200px;
+	position: relative;
+	flex-wrap: wrap;
+	font-weight: bold;
+}
+.listaIzq {
+	width: 500px;
+	height: 800px;
+	padding-right: 0px;
+	overflow: hidden;
+}
+.listaIzq ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#hogar {
+	background-color: lightblue	;
+	background-attachment: fixed;
+	opacity: 0.7;
+	line-height: 35px;
+	font-size: 30px;
+	font-weight: bold;
+	margin:16px;
+	text-align: left;
+	border: 3px solid #108040;
+	top: 50%;
+	left: 50%;
+	width: 420px;
+	border-radius: 20px;
+	height: 340px;
+}
+#chicos {
+	background-color: lightblue	;
+	background-attachment: fixed;
+	opacity: 0.7;
+	line-height: 35px;
+	font-size: 30px;
+	font-weight: bold;
+	margin:10px;
+	text-align: left;
+	border: 3px solid #108040;
+	top: 50%;
+	left: 50%;
+	width: 420px;
+	border-radius: 20px;
+	position: relative;
+	bottom: -100px;
+	left: 1px;
+	margin-top: -400px;
+	height: 340px
+}
+p {
+	line-height: 29px;
+	font-size: 25px;
+}
+
+.listaDer {
+	width: 500px;
+	height: 800px;
+	padding-right: 0px;
+	overflow: hidden;
+}
+.listaDer ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#pedido {	
+	background-color: lightblue	;
+	background-attachment: fixed;
+	opacity: 0.7;
+	line-height: 35px;
+	font-size: 35px;
+	font-weight: bold;
+	margin:16px;
+	text-align: left;
+	border: 3px solid #108040;
+	top: 50%;
+	left: 50%;
+	width: 420px;
+	border-radius: 20px;
+	height: 340px;
+	font-weight: bold;
+}
+#trabajos {
+	background-color: lightblue;
+	background-attachment: fixed;
+	opacity: 0.7;
+	line-height: 35px;
+	font-size: 35px;
+	font-weight: bold;
+	margin:13px;
+	text-align: left;
+	border: 3px solid #108040;
+	top: 50%;
+	left: 50%;
+	width: 420px;
+	border-radius: 20px;
+	position: relative;
+	bottom: -100px;
+	left: 1px;
+	height: 340px;
+	margin-top: -400px
+}
+
+main {
+	padding:0px;
+	overflow: hidden;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 25px;
+}
+.footerRedes {
+	position: relative;
+	bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+/*grid*/
+.contenedor-padre{
+	display: grid;
+	grid-template-areas: 
+	"navprincipal navprincipal navprincipal"
+	"main main main"
+	"footer footer footer";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 100px 800px 150px;
+
+}
+.navprincipal {
+	grid-area: navprincipal;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+
+
+/*grid en navegador*/
+.navprincipal {
+	display: grid;
+	grid-template-areas: 
+	"navIzq logoTop navDer";
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	 }
+.navIzq {
+	grid-area: navIzq;
+}
+.logoTop{
+	grid-area: logoTop;
+}
+.navDer {
+	grid-area: navDer;
+}
+
+/*grid en lista de productos*/
+
+.main {
+	display: grid;
+	grid-template-areas: 
+	"listaIzq imgIndex listaDer";
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+}
+.listaIzq {
+	grid-area: listaIzq;
+	background-color: coral;
+}
+.listaDer{
+	grid-area: listaDer;
+	background-color: coral
+}
+.imgIndex {
+	grid-area: imgIndex;
+}
+
+
+
+/*background main*/
+
+/*main {
+	background-image:  url("../assets/img/imgIndex.png");
+	height: 420px;
+	background-attachment: scroll;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 20px;
+	padding-bottom: 160px;
+	z-index: auto;
+}
+*/
+
+
+
+/*CONTACTO*/
+
+.contenedor-padre-contacto{
+	display: grid;
+	grid-template-areas: 
+	"navprincipal"
+	"contacto"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 800px 150px;
+}
+.navprincipal{
+	grid-area: navprincipal;
+}
+.contenedor-contacto {
+	grid-area: contacto;
+}
+footer {
+	grid-area: footer;
+}
+
+.navprincipal {
+	display: grid;
+	grid-template-areas: 
+	"navIzq logoTop navDer";
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	 }
+.navIzq {
+	grid-area: navIzq;
+}
+.logoTop {
+	grid-area: logoTop;
+}
+.navDer {
+	grid-area: navDer;
+}
+#logoTop1 {
+	width: 80px;
+	hyphens: 100px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	padding-left: 200px;
+	justify-content: center;
+}
+.logoTop {
+	text-align: center;
+	width: 150px;
+	height: 500px;
+}
+.contenedor-contacto {
+	background-image: url(..//assets/img/fondo-contacto.png);
+
+}
+
+.formulario {
+	background-color: lightblue	;
+	background-attachment: fixed;
+	opacity: 0.7;
+	line-height: 35px;
+	font-size: 30	px;
+	font-weight: bold;
+	margin:-194px;
+	text-align: center;
+	border: 3px solid #108040;
+	top: 2%;
+	left: 50%;
+	width: 420px;
+	border-radius: 20px;
+	position: relative;
+	bottom: 50px;
+	top: 250px;
+
+}
+
+/*media querie mobile*/
+@media only screen and (max-width: 768px) {
+	body {
+		background-color: lightpink;
+	}
+.contenedor-padre div {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"ImgFondo"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+.contenedorpadre {
+	grid-area: header;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+.ImgFondo {
+	grid-area: ImgFondo;
+}
+
+.contenedorpadre {
+	display: grid;
+	grid-template-areas: 
+	"navIzq logoTop1 navDer";
+	grid-template-rows: 33% 33% 33%;
+	grid-template-rows: auto auto auto
+}
+.navIzq {
+	grid-area: navIzq;
+}
+.logoTop1 {
+	grid-area: logoTop1; 
+}
+.navDer {
+	grid-area: navDer;
+}
+}
+
+/*media querie tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+	body {
+		background-color: lightblue;
+	}
+.contenedor-padre div {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"ImgFondo"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+.contenedorpadre {
+	grid-area: header;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+.ImgFondo {
+	grid-area: ImgFondo;
+}
+
+.contenedorpadre {
+	display: grid;
+	grid-template-areas: 
+	"navIzq logoTop1 navDer";
+	grid-template-rows: 33% 33% 33%;
+	grid-template-rows: auto auto auto
+}
+.navIzq {
+	grid-area: navIzq;
+}
+.logoTop1 {
+	grid-area: logoTop1; 
+}
+.navDer {
+	grid-area: navDer;
+}
+}
+
+/*media querie desktop*/
+@media only screen and (min-width: 1024px) {
+	body {
+		background-image: linear-gradient(cyan, green);
+	}
+.contenedor-padre{
+	display: grid;
+	grid-template-areas: 
+	"navprincipal navprincipal navprincipal"
+	"main main main"
+	"footer footer footer";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 100px 800px 150px;
+}
+
+.navprincipal {
+	grid-area: navprincipal;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+}
+
+
+/*transform*/
+#mplogo {
+	width: 90px;
+	height: 90px;
+	transform: translate(200px, 9px);
+	transition: all 2s;
+}
+
+#mplogo:hover {
+	height: 98px;
+	width: 98px;
+}
+
+@keyframes animacion {
+	0%{
+		transform: translateY(-50px);
+	}
+	25%{
+		transform: translateX(80px);
+	}
+	50%{
+		transform: scale(1,1);
+	}
+	75%{
+		transform: skew(20deg, 20deg);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}	
+#mplogo {
+	animation-name: animacion;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;
+
+}
